@@ -52,5 +52,16 @@ public class Quiz01_ver2 {
 		x3Print(ArrayNum);
 		ArrayQuix2(ArrayNum);
 	}
+	// 디버깅 : 오류가 발생 할 경우 해당 오류의 원인을 찾는 과정. 코드의 흐름을 파악하기 위한 방법
+	// 디버깅 원리 : 코드를 한줄씩 실행하여 변수의 값 변화나 코드의 흐름을 파악한다 
+	// 디버깅 시작 : 벌레모양 아이콘
+	// 디버깅 종료 : 정지모양 아이콘 
+    // Step Into   (F5)  - 함수 내부로 이동, into / 코드 한줄 실행
+    // Step Over   (F6)  - 함수 내부로 이동하지 않음, over / 코드 한줄 실행 
+    // Step Return (F7)  - 함수 밖으로 이동 
+	// BreakPoint : 멈추고 싶은 코드 위치 
+	// Variable 탭 : 지역변수 목록
+	// BreakPoints 탭 : BreakPoint 목록
+	// Expressions 탭 : 조사식(특정 변수 혹은 명령어 확인)
 
 }
