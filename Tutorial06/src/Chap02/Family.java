@@ -7,7 +7,11 @@ public class Family {
 	private String FirstName;
 	private String Gender;
 	private int Age;
-	
+	public static String LastName;
+	// static 메소드에서는 static 변수만 사용 가능 
+	public static void LivingRoom() {
+		System.out.println(LastName + "씨네 거실입니다.");
+	}
 	public String CreateName() {
 		Random random = new Random();
 		switch(random.nextInt(5)) {
@@ -25,6 +29,9 @@ public class Family {
 			return "예지";
 		}
 	}
+	public void MyRoom() {
+		System.out.println(LastName + FirstName + "의 방입니다.");
+	}
 	public void SetInfo() {
 		Random random = new Random();
 		FirstName = CreateName();
@@ -36,7 +43,7 @@ public class Family {
 		
 	}
 	public void ShowInfo() {
-		System.out.println("이름 : " + FirstName + " 나이 : " + Age + "살 성별 : "+ Gender);
+		System.out.println("이름 : " + LastName + FirstName +  " 나이 : " + Age + "살 성별 : "+ Gender);
 	}
 	
 }
